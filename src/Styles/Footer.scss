@@ -13,5 +13,13 @@
     font-size: 24px;
   }
   &__right {
+    font-size: 8px;
+  }
+  &__socials {
+    max-width: 50px;
+    img {
+      max-width: 20px;
+      padding-left: 35px;
+    }
   }
 }
