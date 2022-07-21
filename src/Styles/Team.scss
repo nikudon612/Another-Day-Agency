@@ -20,12 +20,13 @@
     text-align: left;
   }
   &__team-photo {
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     img {
       height: inherit;
       width: inherit;
       max-width: 500px;
+      object-fit: cover;
     }
   }
   &__team-info {

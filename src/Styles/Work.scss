@@ -1,14 +1,14 @@
 .work {
   height: 100vh;
   padding-top: 100px;
-  overflow: hidden;
+  overflow: auto;
   &__container {
     display: flex;
     flex-direction: column;
   }
   &__title {
     text-align: left;
-    padding-left: 260px;
+    padding-left: 350px;
     padding-top: 70px;
     font-size: 16px;
     font-weight: 600;
@@ -16,7 +16,7 @@
   &__project {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: center;
     padding-top: 35px;
   }
@@ -24,8 +24,11 @@
     img {
       width: 500px;
       height: 300px;
+      object-fit: cover;
     }
   }
   &__desc {
+    font-size: 14px;
+    margin-left: 35px;
   }
 }

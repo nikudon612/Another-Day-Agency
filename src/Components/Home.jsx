@@ -2,10 +2,23 @@ import React from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import '../Styles/Home.scss';
-import work_slider from '../Assets/image_slider.png'
 import Doja from '../Assets/ADA-13.jpg'
 import team from '../Assets/ADA-32.jpg'
 import pierre from '../Assets/ADA-4.jpg'
+import { Grid } from '@splidejs/splide-extension-grid';
+
+// new Splide( '#splide' ).mount( { Grid } );
+
+new Splide( '#splide', {
+    grid: {
+          rows: 2,
+          cols: 2,
+          gap : {
+              row: '1rem',
+              col: '1.5rem',
+          },
+    },
+  } );
 
 const Home = () => {
     const HOME_BLOCK = 'home'
