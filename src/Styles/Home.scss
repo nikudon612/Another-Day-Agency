@@ -6,7 +6,7 @@
   &__container {
     width: 1000px;
     height: 700px;
-    border: 1px solid black;
+    // border: 1px solid black;
   }
   .splide__slide {
     display: flex;
@@ -55,9 +55,11 @@
     position: relative;
     /* width: 257px; */
     overflow: hidden;
+    img {
+      max-width: 1000px;
+    }
   }
   .img__container {
     max-width: 1000px;
   }
-  
 }

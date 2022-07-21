@@ -17,9 +17,9 @@ const Footer = () => {
             {/* <div className={`${FOOTER_BLOCK}__title`}>
                 <p onClick={handleClick}>ADA</p>
             </div> */}
-            <div className={`${FOOTER_BLOCK}__socials`}>
-                <a href='https://www.instagram.com/watersideday1/'>
-                    <img src={insta} alt="instagram" />
+            <div className={`${FOOTER_BLOCK}__socials`} >
+                <a href='https://www.instagram.com/watersideday1/' target="_blank" rel="noreferrer">
+                    <img src={insta} alt="instagram"  />
                 </a>
             </div>
             <div>
@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
             <div className={`${FOOTER_BLOCK}__right`}>
             <div>
-                ©2022 by ANOTHER DAY AGENCY.
+                ANOTHER DAY AGENCY ©2022 
             </div>
         </div>
         </div>
