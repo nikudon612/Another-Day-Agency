@@ -1,0 +1,35 @@
+.about {
+  &__container {
+    margin-left: 115px;
+    margin-right: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 200px;
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &__left-container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+    display: flex;
+    text-align: left;
+  }
+  &__text-container {
+    width: 75%;
+  }
+  &__photo {
+    max-width: 75%;
+  }
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

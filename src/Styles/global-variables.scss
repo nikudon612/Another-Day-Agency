@@ -1,0 +1,10 @@
+$breakpoints: (
+  xs-mobile: 500px,
+  mobile: 768px,
+  tablet: 1024px,
+  desktop: $breakpoint-min-page-width,
+  medium-desktop: 1380px,
+  large-desktop: 1800px,
+  extra-large-desktop: 2500px,
+  medium-large-desktop: 1440px,
+);
