@@ -1,11 +1,12 @@
 import React from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+import { Grid } from '@splidejs/splide-extension-grid';
 import '@splidejs/react-splide/css';
 import '../Styles/Home.scss';
 import Doja from '../Assets/ADA-13.jpg'
 import team from '../Assets/ADA-32.jpg'
 import pierre from '../Assets/ADA-4.jpg'
-import { Grid } from '@splidejs/splide-extension-grid';
+import wide from '../Assets/ADA-16.jpg'
 
 // new Splide( '#splide' ).mount( { Grid } );
 
@@ -41,6 +42,11 @@ const Home = () => {
                     <SplideSlide>
                     <div className={`${HOME_BLOCK}img__wrap`} >
                         <img src={pierre} alt="pierre bourne"/>
+                    </div>
+                    </SplideSlide>
+                    <SplideSlide>
+                    <div className={`${HOME_BLOCK}img__wrap`} >
+                        <img src={wide} alt="pierre bourne"/>
                     </div>
                     </SplideSlide>
                 </Splide>

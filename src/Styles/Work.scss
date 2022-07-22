@@ -20,16 +20,16 @@
   }
   &__title {
     text-align: justify;
-    padding-top: 70px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
+    max-width: 415px;
   }
   &__project {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    padding-top: 35px;
+    padding-top: 105px;
   }
   &__example {
     img {
@@ -38,9 +38,15 @@
       object-fit: cover;
     }
   }
+  &__desc-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 50px;
+  }
   &__desc {
     font-size: 14px;
-    margin-left: 35px;
+    // margin-left: 35px;
   }
-
 }
