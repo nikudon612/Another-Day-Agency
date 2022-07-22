@@ -7,6 +7,9 @@ import Doja from '../Assets/ADA-13.jpg'
 import team from '../Assets/ADA-32.jpg'
 import pierre from '../Assets/ADA-4.jpg'
 import wide from '../Assets/ADA-16.jpg'
+import image5 from '../Assets/ADA-17.jpg'
+import image6 from '../Assets/ADA-18.jpg'
+
 
 // new Splide( '#splide' ).mount( { Grid } );
 
@@ -36,17 +39,20 @@ const Home = () => {
                     </SplideSlide>
                     <SplideSlide>
                     <div className={`${HOME_BLOCK}img__wrap`} >
-                        <img src={team} alt="team"/>
-                    </div>
-                    </SplideSlide>
-                    <SplideSlide>
-                    <div className={`${HOME_BLOCK}img__wrap`} >
+                        <img src={wide} alt="magazine shoot"/>
                         <img src={pierre} alt="pierre bourne"/>
                     </div>
                     </SplideSlide>
                     <SplideSlide>
                     <div className={`${HOME_BLOCK}img__wrap`} >
-                        <img src={wide} alt="pierre bourne"/>
+                        <img src={team} alt="team"/>    
+                    </div>
+                    </SplideSlide>
+                    <SplideSlide>
+                    <div className={`${HOME_BLOCK}img__wrap`} >
+                        <img src={image5} alt="magazine shoot"/>
+                        <img src={image6} alt="magazine shoot"/>
+
                     </div>
                     </SplideSlide>
                 </Splide>

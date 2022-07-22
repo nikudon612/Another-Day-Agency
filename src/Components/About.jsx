@@ -10,7 +10,7 @@ const About = () => {
       <div className={`${ABOUT_BLOCK}__container`}>
         <div className= {`${ABOUT_BLOCK}__left-container`}>
           <div className={`${ABOUT_BLOCK}__left`}>
-            <div className={`${ABOUT_BLOCK}__title`}>What is Another Day?</div>
+            <div className={`${ABOUT_BLOCK}__title`}>What Is Another Day?</div>
           </div>
             <br/>
             <br/>
