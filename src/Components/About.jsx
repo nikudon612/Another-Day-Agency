@@ -15,7 +15,7 @@ const About = () => {
             <br/>
             <br/>
             <div className={`${ABOUT_BLOCK}__text-container`}>
-              <div className={`${ABOUT_BLOCK}__text`}>Here at ADA, we provide brand partnerships allowing clients to form relationships with brands. We do editorial style content giving said client the ability to unlock a true tasteful fashion sense in the eyes of the public. <br/><br/>We are in the business of rebranding not only a look or style, but a culture.</div>
+              <div className={`${ABOUT_BLOCK}__text`}>Here at ADA, we provide brand partnerships allowing clients to form relationships with brands. We curate editorial style content giving our clients the ability to unlock a true tasteful fashion sense in the eyes of the public. <br/><br/>We are in the business of rebranding not only a look or style, but a culture.</div>
             </div>
           </div>
           <div className={`${ABOUT_BLOCK}__right`}>

@@ -5,6 +5,7 @@
   overflow: auto;
   background-color: black;
   color: white;
+  
   &__container {
     display: flex;
     flex-direction: column;
@@ -13,7 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 25%;
+    margin-left: 22%;
   }
   &__left-container {
     display: flex;
@@ -27,6 +28,10 @@
     font-weight: 600;
     max-width: 415px;
     padding-bottom: 35px;
+    // opacity: 1;
+    // transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    //   rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    // transform-style: preserve-3d;
   }
   &__project {
     display: flex;
@@ -52,5 +57,7 @@
   &__desc {
     font-size: 14px;
     color: rgb(185, 185, 185);
+    text-align: left;
+    max-width: 420px;
   }
 }

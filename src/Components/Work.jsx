@@ -10,10 +10,19 @@ import pierre2 from '../Assets/ADA-4.jpg'
 import pierre3 from '../Assets/ADA-20.jpg'
 import '../Styles/Work.scss'
 
+// const splide = new Splide('.work', {
+//     type: 'slide',
+//     autoplay: true,
+//     start: 1,
+//     speed: 500,
+
+// }).mount();
+
 const Work = () => {
     const WORK_BLOCK = 'work'
   return (
     <div className={`${WORK_BLOCK}`}>
+       
         <div className={`${WORK_BLOCK}__container`}>
             <div className={`${WORK_BLOCK}__project-container`}>
             <div className={`${WORK_BLOCK}__project`}>
@@ -24,7 +33,9 @@ const Work = () => {
                 </div>
                 <div className={`${WORK_BLOCK}__desc-container`} >
                 <div className={`${WORK_BLOCK}__title`}>Mona Lisa - Fetty Wap</div>
-                <div className={`${WORK_BLOCK}__desc`}>description of project</div>
+                <div className={`${WORK_BLOCK}__desc`}>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </div>
                 </div>
             </div>
             </div>
@@ -38,7 +49,9 @@ const Work = () => {
                 </div>
                 <div className={`${WORK_BLOCK}__desc-container`} >
                 <div className={`${WORK_BLOCK}__title`}>Wave Gods - Nas, A$AP Rocky, DJ Premier & Hit Boy</div>
-                <div className={`${WORK_BLOCK}__desc`}>description of project</div>
+                <div className={`${WORK_BLOCK}__desc`}>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </div>
                 </div>            </div>
             </div>
 
@@ -51,7 +64,9 @@ const Work = () => {
                 </div>
                 <div className={`${WORK_BLOCK}__desc-container`} >
                 <div className={`${WORK_BLOCK}__title`}>Doja - A$AP Rocky & $NOT</div>
-                <div className={`${WORK_BLOCK}__desc`}>description of project</div>
+                <div className={`${WORK_BLOCK}__desc`}>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </div>
                 </div>
             </div>
             </div>
@@ -65,7 +80,9 @@ const Work = () => {
                  </div>
                 <div className={`${WORK_BLOCK}__desc-container`} >
                 <div className={`${WORK_BLOCK}__title`}>Couch/Drunk&Nasty - Pierre Bourne and Sharc</div>
-                <div className={`${WORK_BLOCK}__desc`}>description of project</div>
+                <div className={`${WORK_BLOCK}__desc`}>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </div>
                 </div>            </div>
             </div>
 
@@ -78,7 +95,9 @@ const Work = () => {
                 </div>
                 <div className={`${WORK_BLOCK}__desc-container`} >
                 <div className={`${WORK_BLOCK}__title`}>Pop Out - Pierre Bourne and TM 88</div>
-                <div className={`${WORK_BLOCK}__desc`}>description of project</div>
+                <div className={`${WORK_BLOCK}__desc`}>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </div>
                 </div>             </div>
             </div>
 
@@ -91,7 +110,9 @@ const Work = () => {
                 </div>
                 <div className={`${WORK_BLOCK}__desc-container`} >
                 <div className={`${WORK_BLOCK}__title`}>What A Day - A$AP 12vy</div>
-                <div className={`${WORK_BLOCK}__desc`}>description of project</div>
+                <div className={`${WORK_BLOCK}__desc`}>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </div>
                 </div>            </div>
             </div>
 
@@ -104,7 +125,9 @@ const Work = () => {
                 </div>
                 <div className={`${WORK_BLOCK}__desc-container`} >
                 <div className={`${WORK_BLOCK}__title`}>4u - Pierre Bourne</div>
-                <div className={`${WORK_BLOCK}__desc`}>description of project</div>
+                <div className={`${WORK_BLOCK}__desc`}>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </div>
                 </div>             </div>
             </div>
         </div>

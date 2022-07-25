@@ -13,7 +13,9 @@ const Team = () => {
       <div className={`${TEAM_BLOCK}__team_info-container`}>
       <div className={`${TEAM_BLOCK}__team-info`}>
         <div className={`${TEAM_BLOCK}__team-photo`}>
-          <img src={Dae} alt="MR. DAQUAN EARLE"/>
+          <a href='https://www.instagram.com/watersideday1/' target='blank' rel='nonreferrer'>
+              <img src={Dae} alt="MR. DAQUAN EARLE"/>
+          </a>
         </div>
         <div className={`${TEAM_BLOCK}__team-text-container`}>
           <div className={`${TEAM_BLOCK}__team-name`}>Daequan Earl</div>
@@ -22,7 +24,10 @@ const Team = () => {
       </div>
       <div className={`${TEAM_BLOCK}__team-info`}>
         <div className={`${TEAM_BLOCK}__team-photo`}>
-          <img src={Ral_Tokyo} alt="Ral Chime"/>
+            <a href='https://www.instagram.com/ral.ug/' target='blank' rel='nonreferrer'>
+                <img src={Ral_Tokyo} alt="Ral Chime"/>
+            </a>
+            
         </div>
         <div className={`${TEAM_BLOCK}__team-text-container`}>
           <div className={`${TEAM_BLOCK}__team-name`}>Ral Chime</div>
@@ -31,7 +36,9 @@ const Team = () => {
       </div>
       <div className={`${TEAM_BLOCK}__team-info`}>
         <div className={`${TEAM_BLOCK}__team-photo`}>
-          <img src={Mango} alt="Ral Chime"/>
+          <a target='blank' rel='nonreferrer'>
+              <img src={Mango} alt="Chloe Mango"/>
+          </a>
         </div>
         <div className={`${TEAM_BLOCK}__team-text-container`}>
           <div className={`${TEAM_BLOCK}__team-name`}>Chloe Mango</div>

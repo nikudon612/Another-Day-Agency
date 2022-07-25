@@ -28,6 +28,10 @@ const Home = () => {
     const HOME_BLOCK = 'home'
   return (
     <div className={`${HOME_BLOCK}`}>
+         <script type='text/javascript'>
+            const splide = new Splide(".splide");
+                splide.mount();
+        </script>
         <div className={`${HOME_BLOCK}__container`}>
             <div className={`${HOME_BLOCK}__img__container`}>
                 {/* <img src={work_slider} alt="slider" /> */}
