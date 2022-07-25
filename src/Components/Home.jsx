@@ -1,6 +1,6 @@
 import React from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import { Grid } from '@splidejs/splide-extension-grid';
+// import { Grid } from '@splidejs/splide-extension-grid';
 import '@splidejs/react-splide/css';
 import '../Styles/Home.scss';
 import Doja from '../Assets/ADA-13.jpg'

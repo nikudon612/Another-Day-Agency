@@ -1,6 +1,5 @@
 import React from 'react'
 import Mona from '../Assets/ADA-15.jpg'
-// import Doja from '../Assets/ADA-12.jpg'
 import Doja from '../Assets/ADA-13.jpg'
 import Wave from '../Assets/ADA-29.jpg'
 import couch from '../Assets/ADA-10.jpg'
@@ -9,6 +8,7 @@ import pierre from '../Assets/ADA-21.jpg'
 import pierre2 from '../Assets/ADA-4.jpg'
 import pierre3 from '../Assets/ADA-20.jpg'
 import '../Styles/Work.scss'
+import { Splide, SplideSlide } from '@splidejs/react-splide'
 
 // const splide = new Splide('.work', {
 //     type: 'slide',
@@ -27,9 +27,19 @@ const Work = () => {
             <div className={`${WORK_BLOCK}__project-container`}>
             <div className={`${WORK_BLOCK}__project`}>
                 <div className={`${WORK_BLOCK}__example`}>
-                    <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer"> 
-                        <img src={Mona} alt='Fetty wap music video'/>
-                    </a>
+                    <Splide aria-label="My Favorite Images">
+                        <SplideSlide>
+                            <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer"> 
+                             <img src={Mona} alt='Fetty wap music video'/>
+                            </a>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer"> 
+                             <img src={Doja} />
+                            </a>
+                        </SplideSlide>
+
+                    </Splide>
                 </div>
                 <div className={`${WORK_BLOCK}__desc-container`} >
                 <div className={`${WORK_BLOCK}__title`}>Mona Lisa - Fetty Wap</div>
