@@ -1,5 +1,6 @@
 import React from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+// import { Intersection } from '@splidejs/splide-extension-intersection';
 // import { Grid } from '@splidejs/splide-extension-grid';
 import '@splidejs/react-splide/css';
 import '../Styles/Home.scss';
@@ -10,32 +11,45 @@ import wide from '../Assets/ADA-16.jpg'
 import image5 from '../Assets/ADA-17.jpg'
 import image6 from '../Assets/ADA-18.jpg'
 
+// new Splide( '#splide' ).mount( { Intersection } );
 
-// new Splide( '#splide' ).mount( { Grid } );
-
-new Splide( '#splide', {
-    grid: {
-          rows: 2,
-          cols: 2,
-          gap : {
-              row: '1rem',
-              col: '1.5rem',
-          },
-    },
-  } );
 
 const Home = () => {
     const HOME_BLOCK = 'home'
+
+    new Splide( '#splide', {
+        autoplay: 'pause',
+        intersection: {
+            inView: {
+                autoplay: true,
+                speed: 500,
+            },
+            outView: {
+                autoplay: false,
+              },
+        },
+        grid: {
+              rows: 2,
+              cols: 2,
+              gap : {
+                  row: '1rem',
+                  col: '1.5rem',
+              },
+        },
+      } );
   return (
     <div className={`${HOME_BLOCK}`}>
-         <script type='text/javascript'>
-            const splide = new Splide(".splide");
-                splide.mount();
-        </script>
+         
         <div className={`${HOME_BLOCK}__container`}>
             <div className={`${HOME_BLOCK}__img__container`}>
                 {/* <img src={work_slider} alt="slider" /> */}
-                <Splide aria-label="My Favorite Images">
+                <Splide className="splide" options={{
+                    type: 'loop',
+                    wheel: true,
+                    autoplay: true,
+                    interval: 3000,
+                    speed: 750,
+                }}>
                     <SplideSlide>
                         <div className={`${HOME_BLOCK}img__wrap`} >
                             <img className={`${HOME_BLOCK}img__img`} src={Doja} alt="doja"/>

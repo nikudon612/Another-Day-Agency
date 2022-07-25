@@ -36,7 +36,7 @@ const Team = () => {
       </div>
       <div className={`${TEAM_BLOCK}__team-info`}>
         <div className={`${TEAM_BLOCK}__team-photo`}>
-          <a target='blank' rel='nonreferrer'>
+          <a href="https://www.instagram.com/watersideday1/" target='blank' rel='nonreferrer'>
               <img src={Mango} alt="Chloe Mango"/>
           </a>
         </div>

@@ -39,5 +39,33 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script type='text/javascript'>
+      // new Splide( '#splide', {
+      //   autoplay: 'pause',
+      //   intersection: {
+      //       inView: {
+      //           autoplay: true,
+      //       },
+      //       outView: {
+      //           autoplay: false,
+      //         },
+      //   },
+      //   grid: {
+      //         rows: 2,
+      //         cols: 2,
+      //         gap : {
+      //             row: '1rem',
+      //             col: '1.5rem',
+      //         },
+      //   },
+      // } );
+
+      const splide = new Splide('.splide', {
+        wheel: true, 
+        autoplay: true,
+        interval: 500,
+      })
+    </script>
   </body>
 </html>

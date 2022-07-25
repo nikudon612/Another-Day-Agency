@@ -2,7 +2,6 @@ import React from 'react'
 import Mona from '../Assets/ADA-15.jpg'
 import Doja from '../Assets/ADA-13.jpg'
 import Wave from '../Assets/ADA-29.jpg'
-import couch from '../Assets/ADA-10.jpg'
 import asap from '../Assets/ADA-9.jpg'
 import pierre from '../Assets/ADA-21.jpg'
 import pierre2 from '../Assets/ADA-4.jpg'
@@ -35,7 +34,7 @@ const Work = () => {
                         </SplideSlide>
                         <SplideSlide>
                             <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer"> 
-                             <img src={Doja} />
+                             <img src={Doja} alt="doja"/>
                             </a>
                         </SplideSlide>
 
