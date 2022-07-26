@@ -11,32 +11,29 @@ import wide from '../Assets/ADA-16.jpg'
 import image5 from '../Assets/ADA-17.jpg'
 import image6 from '../Assets/ADA-18.jpg'
 
-// new Splide( '#splide' ).mount( { Intersection } );
-
-
 const Home = () => {
     const HOME_BLOCK = 'home'
 
-    new Splide( '#splide', {
-        autoplay: 'pause',
-        intersection: {
-            inView: {
-                autoplay: true,
-                speed: 500,
-            },
-            outView: {
-                autoplay: false,
-              },
-        },
-        grid: {
-              rows: 2,
-              cols: 2,
-              gap : {
-                  row: '1rem',
-                  col: '1.5rem',
-              },
-        },
-      } );
+    // new Splide( '#splide', {
+    //     autoplay: 'pause',
+    //     intersection: {
+    //         inView: {
+    //             autoplay: true,
+    //             speed: 500,
+    //         },
+    //         outView: {
+    //             autoplay: false,
+    //           },
+    //     },
+    //     grid: {
+    //           rows: 2,
+    //           cols: 2,
+    //           gap : {
+    //               row: '1rem',
+    //               col: '1.5rem',
+    //           },
+    //     },
+    //   } );
   return (
     <div className={`${HOME_BLOCK}`}>
          
@@ -49,6 +46,7 @@ const Home = () => {
                     autoplay: true,
                     interval: 3000,
                     speed: 750,
+                    pagination: false,
                 }}>
                     <SplideSlide>
                         <div className={`${HOME_BLOCK}img__wrap`} >
@@ -73,6 +71,9 @@ const Home = () => {
 
                     </div>
                     </SplideSlide>
+                    <div className="splide__progress">
+                        <div className="splide__progress__bar" />
+                    </div>
                 </Splide>
             </div>
         </div>

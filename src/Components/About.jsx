@@ -1,6 +1,6 @@
 import React from 'react'
 import "../Styles/About.scss";
-import Ral from '../Assets/Ral-summer-21.JPG'
+import ADA from '../Assets/ADA-35.jpg'
 
 const About = () => {
 
@@ -19,7 +19,7 @@ const About = () => {
             </div>
           </div>
           <div className={`${ABOUT_BLOCK}__right`}>
-            <img className={`${ABOUT_BLOCK}__photo`} src={Ral} alt='ADA Team' />
+            <img className={`${ABOUT_BLOCK}__photo`} src={ADA} alt='ADA Team' />
           </div>
       </div>
 
