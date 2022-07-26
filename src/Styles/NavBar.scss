@@ -39,6 +39,7 @@
     z-index: 100;
     display: none;
     position: absolute;
+    background-color: white;
     :hover {
       cursor: pointer;
     }
@@ -62,21 +63,9 @@
       gap: 0;
       padding-right: 0;
       background-color: #1c1c1c;
-      color: white;
       text-align: center;
     }
   }
-  //   #hidden {
-  //     @media only screen and (max-width: 768px) {
-  //       display: flex;
-  //       top: 100px;
-  //       background: #fff;
-  //       padding: 15px;
-  //       flex-direction: column;
-  //       align-items: center;
-  //       width: 50px;
-  //     }
-  //   }
   &__dropdown {
     height: 100%;
     width: auto;
@@ -102,7 +91,8 @@
     }
     @media only screen and (max-width: 500px) {
       border-top: 1px solid black;
-      margin-top: 50px;
+      //   margin-top: 50px;
+      color: white;
     }
   }
 }

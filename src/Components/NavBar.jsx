@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-// import MenuIcon from "@mui/icons-material/Menu";
-// import CloseIcon from "@mui/icons-material/Close";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import "../Styles/NavBar.scss";
+import MobileNavBar from "./MobileNavBar";
 
 const NAVBAR_BLOCK = "navbar";
 
 const NavBar = () => {
-//   const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false);
     const [toggleMenu, setToggleMenu] = useState(false);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
@@ -27,7 +28,13 @@ const NavBar = () => {
         window.removeEventListener('resize', changeWidth)
     }
 
-  }, [])
+    }, [])
+    
+    const [visible, setVisible] = useState(false);
+
+    const toggleVisibility = () => {
+        setVisible(true)
+    }
 
 
   const handleClick = () => {
@@ -41,13 +48,14 @@ const NavBar = () => {
       <div className={`${NAVBAR_BLOCK}__title`}>
         <p onClick={handleClick}>Another Day Agency</p>
       </div>
-        {/* <button className={`${NAVBAR_BLOCK}__btn`} id="toggle" onClick={() => setShow(!show)}>
-            {show ? <CloseIcon /> : <MenuIcon />}
-        </button> */}
           <div className={`${NAVBAR_BLOCK}__dropdown-container`}>
-           <div className={`${NAVBAR_BLOCK}__dropdown`}>
-                <button className={`${NAVBAR_BLOCK}__btn`} onClick={toggleNav}>=</button>
-            </div>
+              <div className={`${NAVBAR_BLOCK}__dropdown`}>
+                <button className={`${NAVBAR_BLOCK}__btn`} id="toggle" onClick={() => setShow(!show)}>
+                    {show ? <CloseIcon /> : <MenuIcon />}
+                </button>
+                {/* <button className={`${NAVBAR_BLOCK}__btn`} onClick={toggleVisibility}><MenuIcon/></button> */}
+              </div>
+              {show ? <MobileNavBar /> : <div></div>}
         {(toggleMenu || screenWidth > 500) && (
         <div className={`${NAVBAR_BLOCK}__links`}>
             <div className={`${NAVBAR_BLOCK}__link`}>
