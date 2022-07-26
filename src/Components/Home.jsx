@@ -45,7 +45,7 @@ const Home = () => {
                 {/* <img src={work_slider} alt="slider" /> */}
                 <Splide className="splide" options={{
                     type: 'loop',
-                    wheel: true,
+                    // wheel: true,
                     autoplay: true,
                     interval: 3000,
                     speed: 750,
