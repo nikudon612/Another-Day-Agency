@@ -38,7 +38,7 @@
   &__btn {
     z-index: 100;
     display: none;
-    position: relative;
+    position: absolute;
     :hover {
       cursor: pointer;
     }
@@ -46,6 +46,7 @@
       display: block;
       width: 40px;
       height: 40px;
+      top: 25px;
     }
   }
   &__links {
@@ -57,7 +58,7 @@
       flex-direction: column;
       width: 100%;
       height: auto;
-      padding-top: 200px;
+      //   padding-top: 200px;
       gap: 0;
       padding-right: 0;
       background-color: #1c1c1c;
@@ -89,6 +90,7 @@
   &__dropdown-container {
     display: flex;
     flex-direction: column;
+    top: 10px;
   }
   &__link {
     font-size: 16px;
