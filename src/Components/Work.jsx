@@ -1,6 +1,8 @@
 import React from 'react'
 import Mona from '../Assets/ADA-15.jpg'
 import Doja from '../Assets/ADA-13.jpg'
+import Snot from '../Assets/ADA-35.jpeg'
+import Snot2 from '../Assets/ADA-36.jpeg'
 import Wave from '../Assets/ADA-29.jpg'
 import Wave2 from '../Assets/ADA-30.jpg'
 import Wave3 from '../Assets/ADA-31.jpg'
@@ -59,27 +61,27 @@ const Work = () => {
                             </a>
                         </SplideSlide>
                         <SplideSlide>
-                            <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer"> 
+                            <a href='https://www.youtube.com/watch?v=PoK2m6Mu53A&ab_channel=Nas' target="_blank" rel="noreferrer"> 
                              <img src={Wave2} alt="Wave god music video"/>
                             </a>
                         </SplideSlide>
                         <SplideSlide>
-                            <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer"> 
+                            <a href='https://www.youtube.com/watch?v=PoK2m6Mu53A&ab_channel=Nas' target="_blank" rel="noreferrer"> 
                              <img src={Wave3} alt="Wave god music video"/>
                             </a>
                         </SplideSlide>
                         <SplideSlide>
-                            <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer"> 
+                            <a href='https://www.youtube.com/watch?v=PoK2m6Mu53A&ab_channel=Nas' target="_blank" rel="noreferrer"> 
                              <img src={Wave4} alt="Wave god music video"/>
                             </a>
                         </SplideSlide>
                         <SplideSlide>
-                            <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer"> 
+                            <a href='https://www.youtube.com/watch?v=PoK2m6Mu53A&ab_channel=Nas' target="_blank" rel="noreferrer"> 
                              <img src={Wave5} alt="Wave god music video"/>
                             </a>
                         </SplideSlide>
                         <SplideSlide>
-                            <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer"> 
+                            <a href='https://www.youtube.com/watch?v=PoK2m6Mu53A&ab_channel=Nas' target="_blank" rel="noreferrer"> 
                              <img src={Wave6} alt="Wave god music video"/>
                             </a>
                         </SplideSlide>
@@ -105,8 +107,13 @@ const Work = () => {
                             </a>
                         </SplideSlide>
                         <SplideSlide>
-                            <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer"> 
-                             <img src={Doja} alt="doja"/>
+                            <a href='https://www.youtube.com/watch?v=xiVqKFDqxyg&ab_channel=SNOT' target="_blank" rel="noreferrer"> 
+                             <img src={Snot} alt="doja music video"/>
+                            </a>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <a href='https://www.youtube.com/watch?v=xiVqKFDqxyg&ab_channel=SNOT' target="_blank" rel="noreferrer"> 
+                             <img src={Snot2} alt="doja music video"/>
                             </a>
                         </SplideSlide>
                     </Splide>
