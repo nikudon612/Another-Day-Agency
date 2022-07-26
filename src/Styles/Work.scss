@@ -5,7 +5,9 @@
   overflow: auto;
   background-color: black;
   color: white;
-
+  @media screen and (max-width: 500px) {
+    height: 50vh;
+  }
   &__container {
     display: flex;
     flex-direction: column;
