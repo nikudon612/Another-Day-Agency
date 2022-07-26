@@ -1,0 +1,16 @@
+.mobileNav {
+  //   height: 50vh;
+  //   width: 100vw;
+  z-index: 99;
+  &__container {
+    width: 100%;
+    padding-top: 199px;
+  }
+  &__list-container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__list-items {
+    margin: 15px;
+  }
+}
