@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Styles/Team.scss'
-import Dae from '../Assets/ADA-33.jpg'
-import Ral_Tokyo from '../Assets/ral_tokyo.jpg'
+import Dae from '../Assets/ADA-34.jpg'
+import Ral from '../Assets/ral_tokyo.jpg'
 import Mango from '../Assets/ADA-14.jpg'
 
 const Team = () => {
@@ -25,7 +25,7 @@ const Team = () => {
       <div className={`${TEAM_BLOCK}__team-info`}>
         <div className={`${TEAM_BLOCK}__team-photo`}>
             <a href='https://www.instagram.com/ral.ug/' target='blank' rel='nonreferrer'>
-                <img src={Ral_Tokyo} alt="Ral Chime"/>
+                <img src={Ral} alt="Ral Chime"/>
             </a>
             
         </div>
