@@ -9,6 +9,15 @@
   &__container {
     width: 1000px;
     height: 700px;
+    @media screen and (max-width: 1025px) {
+      width: 750px;
+      height: 450px;
+      overflow: hidden;
+    }
+    @media screen and (max-width: 414px) {
+      height: 200px;
+      object-fit: contain;
+    }
   }
 
   .splide__slide {
@@ -19,8 +28,14 @@
   .splide__slide img {
     max-height: 700px;
     object-fit: cover;
+    @media screen and (max-width: 1025px) {
+      max-height: 450px;
+    }
     @media screen and (max-width: 500px) {
       height: 250px;
+    }
+    @media screen and (max-width: 414px) {
+      height: 200px;
     }
   }
   .img__desc {

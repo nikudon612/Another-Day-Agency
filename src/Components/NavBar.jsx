@@ -17,17 +17,13 @@ const NavBar = () => {
   }
 
     useEffect(() => {
-
     const changeWidth = () => {
       setScreenWidth(window.innerWidth);
     }
-
     window.addEventListener('resize', changeWidth)
-
     return () => {
         window.removeEventListener('resize', changeWidth)
     }
-
     }, [])
     
     const [visible, setVisible] = useState(false);
@@ -35,7 +31,6 @@ const NavBar = () => {
     const toggleVisibility = () => {
         setVisible(true)
     }
-
 
   const handleClick = () => {
     window.scrollTo({
@@ -50,10 +45,9 @@ const NavBar = () => {
       </div>
           <div className={`${NAVBAR_BLOCK}__dropdown-container`}>
               <div className={`${NAVBAR_BLOCK}__dropdown`}>
-                <button className={`${NAVBAR_BLOCK}__btn`} id="toggle" onClick={() => setShow(!show)}>
+                <button className={`${NAVBAR_BLOCK}__btn`} onClick={() => setShow(!show)}>
                     {show ? <CloseIcon /> : <MenuIcon />}
                 </button>
-                {/* <button className={`${NAVBAR_BLOCK}__btn`} onClick={toggleVisibility}><MenuIcon/></button> */}
               </div>
               {show ? <MobileNavBar /> : <div></div>}
         {(toggleMenu || screenWidth > 500) && (

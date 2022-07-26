@@ -1,10 +1,12 @@
 .work {
   height: 100vh;
+  width: 100vw;
   padding-top: 100px;
   padding-bottom: 100px;
-  overflow: auto;
+  overflow-y: scroll;
   background-color: black;
   color: white;
+
   @media screen and (max-width: 500px) {
     height: 50vh;
   }
@@ -15,8 +17,11 @@
   &__project-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-left: 22%;
+    @media screen and (max-width: 1025px) {
+      margin-left: 0;
+    }
   }
   &__left-container {
     display: flex;
@@ -30,6 +35,10 @@
     font-weight: 600;
     max-width: 415px;
     padding-bottom: 35px;
+    padding-top: 25px;
+    @media screen and (max-width: 1025px) {
+      text-align: center;
+    }
     // opacity: 1;
     // transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
     //   rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
@@ -41,6 +50,10 @@
     justify-content: center;
     align-content: center;
     padding-top: 105px;
+    @media screen and (max-width: 1025px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__example {
     img {
@@ -55,6 +68,11 @@
     justify-content: flex-start;
     flex-direction: column;
     margin-left: 50px;
+    @media screen and (max-width: 1025px) {
+      align-items: center;
+      justify-content: center;
+      margin-left: 0;
+    }
   }
   &__desc {
     font-size: 14px;
