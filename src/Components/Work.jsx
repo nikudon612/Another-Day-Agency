@@ -10,6 +10,8 @@ import Wave4 from '../Assets/ADA-32.jpg'
 import Wave5 from '../Assets/ADA-27.jpg'
 import Wave6 from '../Assets/ADA-26.jpg'
 import asap from '../Assets/ADA-9.jpg'
+import asap2 from '../Assets/ADA-8.jpg'
+import asap3 from '../Assets/ADA-6.jpg'
 import pierre from '../Assets/ADA-21.jpg'
 import pierre2 from '../Assets/ADA-4.jpg'
 import pierre3 from '../Assets/ADA-20.jpg'
@@ -130,14 +132,16 @@ const Work = () => {
             <div className={`${WORK_BLOCK}__project-container`}>
             <div className={`${WORK_BLOCK}__project`}>
                 <div className={`${WORK_BLOCK}__example`}>
-                <Splide aria-label="My Favorite Images">
+                <Splide aria-label="My Favorite Images" options={{
+                    type: 'loop',
+                }}>
                         <SplideSlide>
                             <a href='https://www.youtube.com/watch?v=SOouEZKEJKo&ab_channel=PierreBourneVEVO' target="_blank" rel="noreferrer"> 
                                 <img src={pierre2} alt='Pierre Bourne'/>
                             </a>
                         </SplideSlide>
                         <SplideSlide>
-                            <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer"> 
+                            <a href='https://www.youtube.com/watch?v=SOouEZKEJKo&ab_channel=PierreBourneVEVO' target="_blank" rel="noreferrer"> 
                              <img src={Doja} alt="doja"/>
                             </a>
                         </SplideSlide>
@@ -154,14 +158,16 @@ const Work = () => {
             <div className={`${WORK_BLOCK}__project-container`}>
             <div className={`${WORK_BLOCK}__project`}>
                 <div className={`${WORK_BLOCK}__example`}>
-                <Splide aria-label="My Favorite Images">
+                <Splide aria-label="My Favorite Images" options={{
+                    type: 'loop',
+                }}>
                         <SplideSlide>
                             <a href='https://www.youtube.com/watch?v=CE8VuI3Dhus&ab_channel=TM88VEVO' target="_blank" rel="noreferrer"> 
                                 <img src={pierre3} alt='Pierre Bourne'/>
                             </a>
                         </SplideSlide>
                         <SplideSlide>
-                            <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer"> 
+                            <a href='https://www.youtube.com/watch?v=CE8VuI3Dhus&ab_channel=TM88VEVO' target="_blank" rel="noreferrer"> 
                              <img src={Doja} alt="doja"/>
                             </a>
                         </SplideSlide>
@@ -178,15 +184,22 @@ const Work = () => {
             <div className={`${WORK_BLOCK}__project-container`}>
             <div className={`${WORK_BLOCK}__project`}>
                 <div className={`${WORK_BLOCK}__example`}>
-                <Splide aria-label="My Favorite Images">
+                <Splide aria-label="My Favorite Images" options={{
+                    type: 'loop',
+                }}>
                         <SplideSlide>
                             <a href='https://www.youtube.com/watch?v=wfC-EiSCne8&ab_channel=ASAPTwelvyy' target="_blank" rel="noreferrer"> 
                                 <img src={asap} alt='12vy'/>
                             </a>
                         </SplideSlide>
                         <SplideSlide>
-                            <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer"> 
-                             <img src={Doja} alt="doja"/>
+                            <a href='https://www.youtube.com/watch?v=wfC-EiSCne8&ab_channel=ASAPTwelvyy' target="_blank" rel="noreferrer"> 
+                             <img src={asap2} alt="12vy"/>
+                            </a>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <a href='https://www.youtube.com/watch?v=wfC-EiSCne8&ab_channel=ASAPTwelvyy' target="_blank" rel="noreferrer"> 
+                             <img src={asap3} alt="12vy"/>
                             </a>
                         </SplideSlide>
                     </Splide>                   
@@ -202,14 +215,16 @@ const Work = () => {
             <div className={`${WORK_BLOCK}__project-container`}>
             <div className={`${WORK_BLOCK}__project`}>
                 <div className={`${WORK_BLOCK}__example`}>
-                <Splide aria-label="My Favorite Images">
+                <Splide aria-label="My Favorite Images" options={{
+                    type: 'loop',
+                }}>
                         <SplideSlide>
                             <a href='https://www.youtube.com/watch?v=mV30rcc30o4&ab_channel=PierreBourne' target="_blank" rel="noreferrer"> 
                                 <img src={pierre} alt='Pierre Bourne'/>
                             </a>
                         </SplideSlide>
                         <SplideSlide>
-                            <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer"> 
+                            <a href='https://www.youtube.com/watch?v=mV30rcc30o4&ab_channel=PierreBourne' target="_blank" rel="noreferrer"> 
                              <img src={Doja} alt="doja"/>
                             </a>
                         </SplideSlide>
