@@ -3,21 +3,25 @@
   display: flex;
   justify-content: center;
   padding-top: 50px;
-//   filter: drop-shadow(30px 26px 9px #444444);
+  @media screen and (max-width: 500px) {
+    height: 50vh;
+  }
   &__container {
     width: 1000px;
     height: 700px;
-    // border: 1px solid black;
   }
+
   .splide__slide {
     display: flex;
     justify-content: center;
   }
 
   .splide__slide img {
-    // margin-top: 25px;
     max-height: 700px;
     object-fit: cover;
+    @media screen and (max-width: 500px) {
+      height: 250px;
+    }
   }
   .img__desc {
     position: absolute;
@@ -62,5 +66,6 @@
   }
   .img__container {
     max-width: 1000px;
+    min-width: 350px;
   }
 }
