@@ -2,20 +2,17 @@ import React from 'react'
 import Mona from '../Assets/ADA-15.jpg'
 import Doja from '../Assets/ADA-13.jpg'
 import Wave from '../Assets/ADA-29.jpg'
+import Wave2 from '../Assets/ADA-30.jpg'
+import Wave3 from '../Assets/ADA-31.jpg'
+import Wave4 from '../Assets/ADA-32.jpg'
+import Wave5 from '../Assets/ADA-27.jpg'
+import Wave6 from '../Assets/ADA-26.jpg'
 import asap from '../Assets/ADA-9.jpg'
 import pierre from '../Assets/ADA-21.jpg'
 import pierre2 from '../Assets/ADA-4.jpg'
 import pierre3 from '../Assets/ADA-20.jpg'
 import '../Styles/Work.scss'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
-
-// const splide = new Splide('.work', {
-//     type: 'slide',
-//     autoplay: true,
-//     start: 1,
-//     speed: 500,
-
-// }).mount();
 
 const Work = () => {
     const WORK_BLOCK = 'work'
@@ -26,8 +23,10 @@ const Work = () => {
             <div className={`${WORK_BLOCK}__project-container`}>
             <div className={`${WORK_BLOCK}__project`}>
                 <div className={`${WORK_BLOCK}__example`}>
-                    <Splide aria-label="My Favorite Images">
-                        <SplideSlide>
+                    <Splide aria-label="My Favorite Images" options={{
+                    type: 'loop',
+                }}>
+                    <SplideSlide>
                             <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer"> 
                              <img src={Mona} alt='Fetty wap music video'/>
                             </a>
@@ -51,7 +50,9 @@ const Work = () => {
             <div className={`${WORK_BLOCK}__project-container`}>
             <div className={`${WORK_BLOCK}__project`}>
                 <div className={`${WORK_BLOCK}__example`}>
-                <Splide aria-label="My Favorite Images">
+                <Splide aria-label="My Favorite Images" options={{
+                    type: 'loop',
+                }}>
                         <SplideSlide>
                             <a href='https://www.youtube.com/watch?v=PoK2m6Mu53A&ab_channel=Nas' target="_blank" rel="noreferrer"> 
                                 <img src={Wave} alt='Wave god music video'/>
@@ -59,7 +60,27 @@ const Work = () => {
                         </SplideSlide>
                         <SplideSlide>
                             <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer"> 
-                             <img src={Doja} alt="doja"/>
+                             <img src={Wave2} alt="Wave god music video"/>
+                            </a>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer"> 
+                             <img src={Wave3} alt="Wave god music video"/>
+                            </a>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer"> 
+                             <img src={Wave4} alt="Wave god music video"/>
+                            </a>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer"> 
+                             <img src={Wave5} alt="Wave god music video"/>
+                            </a>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer"> 
+                             <img src={Wave6} alt="Wave god music video"/>
                             </a>
                         </SplideSlide>
                     </Splide>
@@ -75,7 +96,9 @@ const Work = () => {
             <div className={`${WORK_BLOCK}__project-container`}>
             <div className={`${WORK_BLOCK}__project`}>
                 <div className={`${WORK_BLOCK}__example`}>
-                <Splide aria-label="My Favorite Images">
+                <Splide aria-label="My Favorite Images" options={{
+                    type: 'loop',
+                }}>
                         <SplideSlide>
                             <a href='https://www.youtube.com/watch?v=xiVqKFDqxyg&ab_channel=SNOT' target="_blank" rel="noreferrer"> 
                                 <img src={Doja} alt='doja music video'/>
