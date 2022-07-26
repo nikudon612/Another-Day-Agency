@@ -9,7 +9,7 @@ const Team = () => {
   return (
     <div className={`${TEAM_BLOCK}__team`} >
     <div className={`${TEAM_BLOCK}__team-container`}>
-      <div className={`${TEAM_BLOCK}__team-title`}>ADA Team</div>
+      <div className={`${TEAM_BLOCK}__team-title`}>Our Team</div>
       <div className={`${TEAM_BLOCK}__team_info-container`}>
       <div className={`${TEAM_BLOCK}__team-info`}>
         <div className={`${TEAM_BLOCK}__team-photo`}>
