@@ -22,7 +22,7 @@ const Team = () => {
           <div className={`${TEAM_BLOCK}__team-desc`}>Founder and Lead Stylist</div>
         </div>
       </div>
-      <div className={`${TEAM_BLOCK}__team-info`}>
+      <div className={`${TEAM_BLOCK}__team-info`} id='ral'>
         <div className={`${TEAM_BLOCK}__team-photo`}>
             <a href='https://www.instagram.com/ral.ug/' target='blank' rel='nonreferrer'>
                 <img src={Ral} alt="Ral Chime"/>
@@ -30,7 +30,7 @@ const Team = () => {
             
         </div>
         <div className={`${TEAM_BLOCK}__team-text-container`}>
-          <div className={`${TEAM_BLOCK}__team-name`}>Ral Chime</div>
+          <div className={`${TEAM_BLOCK}__team-name`} >Ral Chime</div>
           <div className={`${TEAM_BLOCK}__team-desc`}>Head Designer</div>
         </div>
       </div>

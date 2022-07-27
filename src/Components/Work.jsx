@@ -9,14 +9,16 @@ import Wave3 from '../Assets/ADA-31.jpg'
 import Wave4 from '../Assets/ADA-32.jpg'
 import Wave5 from '../Assets/ADA-27.jpg'
 import Wave6 from '../Assets/ADA-26.jpg'
-import asap from '../Assets/ADA-9.jpg'
-import asap2 from '../Assets/ADA-8.jpg'
-import asap3 from '../Assets/ADA-6.jpg'
+import asap from '../Assets/ADA-37.jpeg'
+import asap2 from '../Assets/ADA-38.jpeg'
+import asap3 from '../Assets/ADA-39.jpeg'
+import asap4 from '../Assets/ADA-40.jpeg'
 import pierre from '../Assets/ADA-21.jpg'
 import pierre2 from '../Assets/ADA-4.jpg'
 import pierre3 from '../Assets/ADA-20.jpg'
 import '../Styles/Work.scss'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
+
 
 const Work = () => {
     const WORK_BLOCK = 'work'
@@ -200,6 +202,11 @@ const Work = () => {
                         <SplideSlide>
                             <a href='https://www.youtube.com/watch?v=wfC-EiSCne8&ab_channel=ASAPTwelvyy' target="_blank" rel="noreferrer"> 
                              <img src={asap3} alt="12vy"/>
+                            </a>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <a href='https://www.youtube.com/watch?v=wfC-EiSCne8&ab_channel=ASAPTwelvyy' target="_blank" rel="noreferrer"> 
+                             <img src={asap4} alt="12vy"/>
                             </a>
                         </SplideSlide>
                     </Splide>                   
