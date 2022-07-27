@@ -44,6 +44,9 @@
     padding-left: 35px;
     padding-top: 35px;
     padding-bottom: 35px;
+    #ral {
+      flex-direction: row-reverse;
+    }
   }
   &__team-name {
     padding-bottom: 35px;
