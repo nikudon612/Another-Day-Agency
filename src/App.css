@@ -1,8 +1,7 @@
 .App {
   text-align: center;
   /* background-color: rgb(29, 29, 29); */
-  font-family: Helvetica, Arial sans-serif;
-  font-family: UniversNextPro-Medium, sans;
+  font-family: Helvetica, Arial sans-serif !important;
   /* overflow-x: hidden; */
 }
 
