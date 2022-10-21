@@ -19,6 +19,50 @@ import pierre3 from '../Assets/ADA-20.jpg'
 import '../Styles/Work.scss'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 
+const featured = {
+    id: 1,
+    link: 'https://www.youtube.com/watch?v=xiVqKFDqxyg&ab_channel=SNOT',
+    image: Doja,
+    title: "Doja by $not",
+    info: '',
+};
+
+const firstRow = [
+    {
+        id: 1,
+        link: 'https://www.youtube.com/watch?v=xiVqKFDqxyg&ab_channel=SNOT',
+        image: Doja,
+        title: "Doja by $not",
+        info: '',  
+    },
+    {
+        id: 2,
+        link: 'https://www.youtube.com/watch?v=xiVqKFDqxyg&ab_channel=SNOT',
+        image: Doja,
+        title: "Doja by $not",
+        info: '',  
+    }
+]
+
+const secondRow = [
+    {
+        id: 1,
+        link: 'https://www.youtube.com/watch?v=xiVqKFDqxyg&ab_channel=SNOT',
+        image: Doja,
+        title: "Doja by $not",
+        info: '',  
+    },
+    {
+        id: 2,
+        link: 'https://www.youtube.com/watch?v=xiVqKFDqxyg&ab_channel=SNOT',
+        image: Doja,
+        title: "Doja by $not",
+        info: '',  
+    }
+]
+
+
+
 
 const Work = () => {
     const WORK_BLOCK = 'work'
@@ -33,24 +77,34 @@ const Work = () => {
                       </div>
                   </div>
                   <div className='featured-image'>
-                      <img src={Doja} alt='featured client'/>
+                      <a href={featured.link} target="_blank" rel="noreferrer">
+                         <img src={featured.image} alt='featured client'/>
+                      </a>
                   </div>
               </div>
-              <div className='two'>
+              <div className='twotwo'>
                   <div className='two-con'>
-                     <div className='one'>
-                      <img src={Mona} alt=''/>
+                      <div className='one'>
+                          <a href=''>
+                            <img src={Mona} alt=''/>  
+                          </a>
                     </div>
-                    <div className='two'>
-                     <img src={asap} alt=''/>
+                      <div className='two'>
+                          <a href=''>
+                            <img src={asap} alt=''/>
+                          </a>
                     </div>
                   </div>
                   <div className='two-second'>
-                    <div className='three'>
-                        <img src={Wave} alt=''/>
+                      <div className='three'>
+                          <a>
+                             <img src={Wave} alt=''/>
+                          </a>
                     </div>
-                    <div className='four'>
-                        <img src={pierre} alt=''/>
+                      <div className='four'>
+                          <a>
+                            <img src={pierre} alt=''/>
+                          </a>
                     </div>
                   </div>
                   
