@@ -18,6 +18,7 @@ import pierre2 from '../Assets/ADA-4.jpg'
 import pierre3 from '../Assets/ADA-20.jpg'
 import '../Styles/Work.scss'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
+import { motion } from "framer-motion"
 
 const featured = {
     id: 1,
@@ -67,7 +68,16 @@ const secondRow = [
 const Work = () => {
     const WORK_BLOCK = 'work'
   return (
-      <div className={`${WORK_BLOCK}`}>
+      <motion.div className={`${WORK_BLOCK}`} initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{
+        type: "spring",
+        bounce: 0.3,
+        duration: 3,
+        delay: 0.5,
+        ease: "linear",
+      }}>
           <div className='grid'>
               <div className='featured'>
                   <div className='intro-text'>
@@ -85,24 +95,24 @@ const Work = () => {
               <div className='twotwo'>
                   <div className='two-con'>
                       <div className='one'>
-                          <a href=''>
+                          <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer">
                             <img src={Mona} alt=''/>  
                           </a>
                     </div>
                       <div className='two'>
-                          <a href=''>
+                          <a href='https://www.youtube.com/watch?v=wfC-EiSCne8&ab_channel=ASAPTwelvyy' target="_blank" rel="noreferrer">
                             <img src={asap} alt=''/>
                           </a>
                     </div>
                   </div>
                   <div className='two-second'>
                       <div className='three'>
-                          <a>
+                          <a href='https://www.youtube.com/watch?v=PoK2m6Mu53A&ab_channel=Nas' target="_blank" rel="noreferrer" className='wave-a'>
                              <img src={Wave} alt=''/>
                           </a>
                     </div>
                       <div className='four'>
-                          <a>
+                          <a href='https://www.youtube.com/watch?v=SOouEZKEJKo&ab_channel=PierreBourneVEVO'target="_blank" rel="noreferrer">
                             <img src={pierre} alt=''/>
                           </a>
                     </div>
@@ -332,7 +342,7 @@ const Work = () => {
                 </div>
             </div>
         </div> */}
-    </div>
+    </motion.div>
   )
 }
 

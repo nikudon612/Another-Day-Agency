@@ -10,6 +10,8 @@ import pierre from '../Assets/ADA-4.jpg'
 import wide from '../Assets/ADA-16.jpg'
 import image5 from '../Assets/ADA-17.jpg'
 import image6 from '../Assets/ADA-18.jpg'
+import { motion } from "framer-motion"
+
 
 const Home = () => {
     const HOME_BLOCK = 'home'
@@ -37,7 +39,16 @@ const Home = () => {
   return (
     <div className={`${HOME_BLOCK}`}>
          
-        <div className={`${HOME_BLOCK}__container`}>
+        <motion.div className={`${HOME_BLOCK}__container`} initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            type: "spring",
+            bounce: 0.3,
+            duration: 3,
+            delay: 0.5,
+            ease: "linear",
+          }}>
             <div className={`${HOME_BLOCK}__img__container`}>
                 {/* <img src={work_slider} alt="slider" /> */}
                 <Splide className="splide" options={{
@@ -76,7 +87,7 @@ const Home = () => {
                     </div>
                 </Splide>
             </div>
-        </div>
+        </motion.div>
     </div>
   )
 }
