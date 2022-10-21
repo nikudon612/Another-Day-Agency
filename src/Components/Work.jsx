@@ -32,15 +32,15 @@ const firstRow = [
     {
         id: 1,
         link: 'https://www.youtube.com/watch?v=xiVqKFDqxyg&ab_channel=SNOT',
-        image: Doja,
-        title: "Doja by $not",
+        image: Mona,
+        title: "Mona by Fetty Wap",
         info: '',  
     },
     {
         id: 2,
-        link: 'https://www.youtube.com/watch?v=xiVqKFDqxyg&ab_channel=SNOT',
-        image: Doja,
-        title: "Doja by $not",
+        link: 'https://www.youtube.com/watch?v=wfC-EiSCne8&ab_channel=ASAPTwelvyy',
+        image: asap,
+        title: "... by A$AP Twelvyy",
         info: '',  
     }
 ]
@@ -48,16 +48,16 @@ const firstRow = [
 const secondRow = [
     {
         id: 1,
-        link: 'https://www.youtube.com/watch?v=xiVqKFDqxyg&ab_channel=SNOT',
-        image: Doja,
-        title: "Doja by $not",
+        link: 'https://www.youtube.com/watch?v=PoK2m6Mu53A&ab_channel=Nas',
+        image: Wave,
+        title: "Wave Gods by Nas",
         info: '',  
     },
     {
         id: 2,
-        link: 'https://www.youtube.com/watch?v=xiVqKFDqxyg&ab_channel=SNOT',
-        image: Doja,
-        title: "Doja by $not",
+        link: 'https://www.youtube.com/watch?v=SOouEZKEJKo&ab_channel=PierreBourneVEVO',
+        image: pierre,
+        title: "Couch/Drunk by Pierre Bourne",
         info: '',  
     }
 ]
@@ -88,34 +88,40 @@ const Work = () => {
                   </div>
                   <div className='featured-image'>
                       <a href={featured.link} target="_blank" rel="noreferrer">
+                      <div className='desc'>
+                              {featured.title}
+                        </div>
                          <img src={featured.image} alt='featured client'/>
                       </a>
+                      
                   </div>
               </div>
               <div className='twotwo'>
                   <div className='two-con'>
+                      {firstRow.map((project) => (
                       <div className='one'>
-                          <a href='https://www.youtube.com/watch?v=jG6PY7yKpBQ&ab_channel=HarlemFetty' target="_blank" rel="noreferrer">
-                            <img src={Mona} alt=''/>  
-                          </a>
+                      <a href={project.link} target="_blank" rel="noreferrer">
+                      <div className='half-desc'>
+                          {project.title}
                     </div>
-                      <div className='two'>
-                          <a href='https://www.youtube.com/watch?v=wfC-EiSCne8&ab_channel=ASAPTwelvyy' target="_blank" rel="noreferrer">
-                            <img src={asap} alt=''/>
-                          </a>
-                    </div>
+                        <img src={project.image} alt=''/>  
+                      </a>
+                </div>
+                      ))}
+                     
                   </div>
                   <div className='two-second'>
-                      <div className='three'>
-                          <a href='https://www.youtube.com/watch?v=PoK2m6Mu53A&ab_channel=Nas' target="_blank" rel="noreferrer" className='wave-a'>
-                             <img src={Wave} alt=''/>
+                      {secondRow.map((project) => (
+                          <div className='three'>
+                          <a href={project.link} target="_blank" rel="noreferrer" className='wave-a'>
+                          <div className='half-desc'>
+                              {project.title}
+                        </div>
+                              <img src={project.image} alt='' />
                           </a>
                     </div>
-                      <div className='four'>
-                          <a href='https://www.youtube.com/watch?v=SOouEZKEJKo&ab_channel=PierreBourneVEVO'target="_blank" rel="noreferrer">
-                            <img src={pierre} alt=''/>
-                          </a>
-                    </div>
+                      ))}
+                    
                   </div>
                   
               </div>
