@@ -22,7 +22,7 @@ const About = () => {
         ease: "linear",
       }}>
           <div className={`${ABOUT_BLOCK}__left`}>
-            <div className={`${ABOUT_BLOCK}__title`}>What Is Another Day?</div>
+            <div className={`${ABOUT_BLOCK}__title`}>Tomorrow's Another Day...</div>
           </div>
             <br/>
             <br/>
