@@ -14,8 +14,11 @@ const Contact = () => {
                 <span>Feel free to reach out for rates. We would love to be included on your projects.</span>{""}
                 <span className='text-highlight'>We require a deposit of 50% down on confirmed bookings of our services.</span>
                 </div>
-            </div>
-            <div>info@anotherday.com</div>
+        </div>
+        <div className='email'>
+        <div>info@anotherday.com</div>
+
+        </div>
         </div>
     </div>
   )
