@@ -1,5 +1,5 @@
 .footer {
-  margin-top: 125px;
+  // margin-top: 125px;
   // position: fixed;
   height: 85px;
   &__container {
@@ -22,5 +22,9 @@
       padding-left: 35px;
       filter: grayscale(100%);
     }
+  }
+  &__leftcon {
+    display: flex;
+    align-items: center;
   }
 }
