@@ -23,9 +23,41 @@ import { Splide, SplideSlide } from '@splidejs/react-splide'
 const Work = () => {
     const WORK_BLOCK = 'work'
   return (
-    <div className={`${WORK_BLOCK}`}>
+      <div className={`${WORK_BLOCK}`}>
+          <div className='grid'>
+              <div className='featured'>
+                  <div className='intro-text'>
+                      <div className='intro-con'>
+                          <div>Styling & Creative Direction</div>
+                          <div>more text about what yall do</div>
+                      </div>
+                  </div>
+                  <div className='featured-image'>
+                      <img src={Doja} alt='featured client'/>
+                  </div>
+              </div>
+              <div className='two'>
+                  <div className='two-con'>
+                     <div className='one'>
+                      <img src={Mona} alt=''/>
+                    </div>
+                    <div className='two'>
+                     <img src={asap} alt=''/>
+                    </div>
+                  </div>
+                  <div className='two-second'>
+                    <div className='three'>
+                        <img src={Wave} alt=''/>
+                    </div>
+                    <div className='four'>
+                        <img src={pierre} alt=''/>
+                    </div>
+                  </div>
+                  
+              </div>
+          </div>
        
-        <div className={`${WORK_BLOCK}__container`}>
+        {/* <div className={`${WORK_BLOCK}__container`}>
             <div className={`${WORK_BLOCK}__project-container`}>
             <div className={`${WORK_BLOCK}__project`}>
                 <div className={`${WORK_BLOCK}__example`}>
@@ -245,7 +277,7 @@ const Work = () => {
                 </div>
                 </div>
             </div>
-        </div>
+        </div> */}
     </div>
   )
 }
