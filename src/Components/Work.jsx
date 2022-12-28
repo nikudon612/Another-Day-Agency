@@ -82,8 +82,9 @@ const Work = () => {
               <div className='featured'>
                   <div className='intro-text'>
                       <div className='intro-con'>
-                          <div>Styling & Creative Direction</div>
-                          <div>more text about what yall do</div>
+                          <div>Styling &
+                              <br/>Creative Direction</div>
+                          {/* <div>more text about what yall do</div> */}
                       </div>
                   </div>
                   <div className='featured-image'>

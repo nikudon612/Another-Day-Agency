@@ -12,13 +12,14 @@
   top: 0;
   background-color: white;
   overflow: hidden;
-  filter: drop-shadow(7px -2px 9px #444444);
+  // filter: drop-shadow(7px -2px 9px #444444);
+  border-bottom: 1px solid #00000030;
   a:hover {
     cursor: pointer;
-    color: rgb(180, 128, 240);
-    transition: all 0.5s ease;
+    color: rgb(140, 54, 238);
+    // transition: all 0.5s ease;
 
-    font-size: 18px;
+    // font-size: 18px;
   }
   p:hover {
     cursor: pointer;
